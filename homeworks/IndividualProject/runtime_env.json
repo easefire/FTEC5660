@@ -1,0 +1,6 @@
+{
+    "SIGNATURE": "gpt-5",
+    "IF_TRADE": false,
+    "MARKET": "us",
+    "LOG_PATH": "./data/agent_data"
+}
