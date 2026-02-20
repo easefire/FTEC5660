@@ -1,4 +1,4 @@
-# UNBench
+# UNBench_Optimized
 
 UNBench is a comprehensive multi-stage benchmark built on United Nations Security Council (UNSC) records to evaluate large language models across drafting, voting, and statement generation in high-stakes political decision-making.
 
