@@ -85,12 +85,12 @@ UNBench/
    Replace placeholders in notebooks:
 
    ```python
-         client = OpenAI(
+   client = OpenAI(
           api_key="xxxxxxxxxxx",
           base_url="xxxxxxxxxxx"
       )
       
-      your_model_name = "xxxxxxxxxxx"
+   your_model_name = "xxxxxxxxxxx"
    ```
 
 ## Usage
