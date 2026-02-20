@@ -60,9 +60,7 @@ UNBench/
 │   ├── run_task3.ipynb
 │   └── run_task4.ipynb
 │
-├── LICENSE                       # License file (MIT)
 ├── README.md                     # Dataset description and usage guide
-└── requirements.txt              # Python dependencies
 ```
 
 ## Installation
