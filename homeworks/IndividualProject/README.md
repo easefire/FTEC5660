@@ -2,21 +2,9 @@
 
 UNBench is a comprehensive multi-stage benchmark built on United Nations Security Council (UNSC) records to evaluate large language models across drafting, voting, and statement generation in high-stakes political decision-making.
 
-## Paper
-
-**Benchmarking LLMs for Political Science: A United Nations Perspective**  
-*Yueqing Liang, Liangwei Yang, Chen Wang, Congying Xia, Rui Meng, Xiongxiao Xu, Haoran Wang, Ali Payani, Kai Shu*  
-**AAAI 2026 (Oral)**  
-🔗 https://arxiv.org/abs/2502.14122
-
-![UNBench major](figures/UNBench.png)
-
 ## Overview
 
-This repository provides tools and sample data for analyzing, simulating, and generating content related to UNSC draft resolutions using language models.
-UNBench covers four interconnected tasks spanning the UN decision-making process, including drafting, voting, and statement generation.
-
-We release approximately **30 representative samples per task** in this repository for reproducibility and inspection.
+There are approximately **30 representative samples per task** in this repository for reproducibility and inspection.
 The **full dataset** can be downloaded from Google Drive:
 🔗 https://drive.google.com/file/d/1tiBCCYPjeIN92TkO8Vt8vrpSKLmGb-6Y/view?usp=sharing
 
@@ -94,16 +82,18 @@ UNBench/
    pip install -r requirements.txt
    ```
 
-3. **Add Together API credentials:**
+3. **Using Openai API:**
 
    Replace placeholders in notebooks:
 
    ```python
-   your_model_name = 'xxxxxxxxxxxxxxxxxxxxxxxx'
-   your_api_key = 'xxxxxxxxxxxxxxxxxxxxxxxx'
+         client = OpenAI(
+          api_key="xxxxxxxxxxx",
+          base_url="xxxxxxxxxxx"
+      )
+      
+      your_model_name = "xxxxxxxxxxx"
    ```
-
-   with your Together API details or you can use your own LLMs.
 
 ## Usage
 
@@ -130,22 +120,3 @@ UNBench/
 - together
 - pandas
 - numpy
-
-
-
-## Citation
-
-If you use UNBench in your research, please cite:
-
-```bibtex
-@inproceedings{liang2026unbench,
-  title={Benchmarking LLMs for Political Science: A United Nations Perspective},
-  author={Liang, Yueqing and Yang, Liangwei and Wang, Chen and Xia, Congying and Meng, Rui and Xu, Xiongxiao and Wang, Haoran and Payani, Ali and Shu, Kai},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2026}
-}
-- scikit-learn
-- tqdm
-- imbalanced-learn
-- rouge-score
-
